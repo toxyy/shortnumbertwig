@@ -9,6 +9,12 @@ phpBB 3.3.x PHP 7+
 
 Adds `short_number_ext` twig function
 
+## Screenshot
+
+Usage example: `{{ format_number_ext(forumrow.TOPICS) }}`
+
+![alt text](https://i.snipboard.io/tQVbdR.jpg)
+
 ## Quick Install
 
 You can install this on the latest release of phpBB 3.3 by following the steps below:
