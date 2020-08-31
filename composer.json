@@ -1,7 +1,7 @@
 {
 	"name": "toxyy/shortnumbertwig",
 	"type": "phpbb-extension",
-	"description": "Short Number Twig Extension for phpbb 3.2/3.3",
+	"description": "Short Number Twig Extension for phpbb 3.3.x",
 	"homepage": "https://github.com/toxyy/shortnumbertwig",
 	"version": "1.0.0",
 	"time": "2020-08-31",
@@ -19,7 +19,7 @@
 	"extra": {
 		"display-name": "Short Number Twig Extension",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.2"
+			"phpbb/phpbb": ">=3.3"
 		},
 		"version-check": {
 			"host": "toxyy.github.io",

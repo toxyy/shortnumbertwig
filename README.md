@@ -2,7 +2,7 @@
 
 ## Requirements
 
-phpBB 3.2/3.3+ PHP 7+
+phpBB 3.3.x PHP 7+
 
 ## Features
 
@@ -10,7 +10,7 @@ Adds `short_number_ext` twig function
 
 ## Quick Install
 
-You can install this on the latest release of phpBB 3.2 by following the steps below:
+You can install this on the latest release of phpBB 3.3 by following the steps below:
 
 * Create `toxyy/shortnumbertwig` in the `ext` directory.
 * Download and unpack the repository into `ext/toxyy/shortnumbertwig`
