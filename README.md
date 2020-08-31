@@ -11,7 +11,7 @@ Adds `short_number_ext` twig function
 
 ## Screenshot
 
-Usage example: `{{ format_number_ext(forumrow.TOPICS) }}`
+Usage example: `{{ short_number_ext(forumrow.TOPICS) }}`
 
 ![alt text](https://i.snipboard.io/tQVbdR.jpg)
 
