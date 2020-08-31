@@ -1,9 +1,10 @@
 <?php
 /**
-* phpBB Extension - toxyy Short Number Twig Extension
-* @copyright (c) 2020 toxyy <thrashtek@yahoo.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*/
+ * phpBB Extension - toxyy Short Number Twig Extension
+ *
+ * @copyright (c) 2020 toxyy <thrashtek@yahoo.com>
+ * @license       GNU General Public License, version 2 (GPL-2.0)
+ */
 
 namespace toxyy\shortnumbertwig;
 
@@ -18,7 +19,7 @@ class ext extends base
 	{
 		$config = $this->container->get('config');
 
-                // check phpbb and phpb versions
+		// check phpbb and phpb versions
 		$is_enableable = (phpbb_version_compare($config['version'], '3.3', '>=') && version_compare(PHP_VERSION, '7', '>='));
 
 		return $is_enableable;

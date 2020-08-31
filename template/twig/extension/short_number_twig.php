@@ -1,8 +1,9 @@
 <?php
 /**
  * phpBB Extension - toxyy Short Number Twig Extension
+ *
  * @copyright (c) 2020 toxyy <thrashtek@yahoo.com>
- * @license GNU General Public License, version 2 (GPL-2.0)
+ * @license       GNU General Public License, version 2 (GPL-2.0)
  */
 
 namespace toxyy\shortnumbertwig\template\twig\extension;
@@ -32,24 +33,34 @@ class short_number_twig extends \Twig_Extension
 	}
 
 	// credit to RadGH, hassanamirkhan and others @ https://gist.github.com/RadGH/84edff0cc81e6326029c
-	function number_format_short($n) {
-		if ($n >= 0 && $n < 10000) {
+	function number_format_short($n)
+	{
+		if ($n >= 0 && $n < 10000)
+		{
 			// 1 - 9999
 			$n_format = floor($n);
 			$suffix = '';
-		} else if ($n >= 10000 && $n < 1000000) {
+		}
+		else if ($n >= 10000 && $n < 1000000)
+		{
 			// 10k-999k
 			$n_format = floor($n / 1000);
 			$suffix = 'K';
-		} else if ($n >= 1000000 && $n < 1000000000) {
+		}
+		else if ($n >= 1000000 && $n < 1000000000)
+		{
 			// 1m-999m
 			$n_format = floor($n / 1000000);
 			$suffix = 'M';
-		} else if ($n >= 1000000000 && $n < 1000000000000) {
+		}
+		else if ($n >= 1000000000 && $n < 1000000000000)
+		{
 			// 1b-999b
 			$n_format = floor($n / 1000000000);
 			$suffix = 'B';
-		} else if ($n >= 1000000000000) {
+		}
+		else if ($n >= 1000000000000)
+		{
 			// 1t+
 			$n_format = floor($n / 1000000000000);
 			$suffix = 'T';
