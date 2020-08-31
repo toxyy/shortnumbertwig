@@ -6,7 +6,7 @@
 	"version": "1.0.0",
 	"time": "2020-08-31",
 	"keywords": ["phpbb", "extension", "twig", "twig extension","short number"],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"authors": [{
 			"name": "toxyy",
 			"email": "thrashtek@yahoo.com",
