@@ -1,10 +1,10 @@
-# PhpBB Extension - toxyy Short Number Twig Extension v1.0.0
+# PhpBB Extension - toxyy Short Number Twig Extension v1.0.1
 
 [Topic on phpBB.com](https://www.phpbb.com/community/viewtopic.php?t=2566181)
 
 ## Requirements
 
-phpBB 3.3.x PHP 7+
+phpBB 3.3.x & PHP 7.1.3+
 
 [![Build Status](https://travis-ci.org/toxyy/shortnumbertwig.svg?branch=master)](https://travis-ci.org/toxyy/shortnumbertwig)
 ## Features

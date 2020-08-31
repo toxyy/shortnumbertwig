@@ -1,5 +1,14 @@
 services:
+    toxyy.shortnumbertwig.listener:
+        class: toxyy\shortnumbertwig\event\listener
+        arguments:
+            - '@language'
+        tags:
+            - { name: event.listener }
+
     toxyy.shortnumbertwig.short_number_twig:
         class: toxyy\shortnumbertwig\template\twig\extension\short_number_twig
+        arguments:
+            - '@language'
         tags:
             - { name: twig.extension }

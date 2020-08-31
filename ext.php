@@ -20,7 +20,7 @@ class ext extends base
 		$config = $this->container->get('config');
 
 		// check phpbb and phpb versions
-		$is_enableable = (phpbb_version_compare($config['version'], '3.3', '>=') && version_compare(PHP_VERSION, '7', '>='));
+		$is_enableable = (phpbb_version_compare($config['version'], '3.3', '>=') && version_compare(PHP_VERSION, '7.1.3', '>='));
 
 		return $is_enableable;
 	}

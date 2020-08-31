@@ -10,6 +10,19 @@ namespace toxyy\shortnumbertwig\template\twig\extension;
 
 class short_number_twig extends \Twig_Extension
 {
+	/** @var \phpbb\language\language $language */
+	protected $language;
+
+	/**
+	 * Constructor
+	 *
+	 * @param \phpbb\config\language $language Language object
+	 */
+	public function __construct(\phpbb\language\language $language)
+	{
+		$this->language = $language;
+	}
+
 	/**
 	 * Get the name of this extension
 	 *
@@ -45,25 +58,25 @@ class short_number_twig extends \Twig_Extension
 		{
 			// 10k-999k
 			$n_format = floor($n / 1000);
-			$suffix = 'K';
+			$suffix = $this->language->lang('THOUSAND_SHORT_SUFFIX');
 		}
 		else if ($n >= 1000000 && $n < 1000000000)
 		{
 			// 1m-999m
 			$n_format = floor($n / 1000000);
-			$suffix = 'M';
+			$suffix = $this->language->lang('MILLION_SHORT_SUFFIX');
 		}
 		else if ($n >= 1000000000 && $n < 1000000000000)
 		{
 			// 1b-999b
 			$n_format = floor($n / 1000000000);
-			$suffix = 'B';
+			$suffix = $this->language->lang('BILLION_SHORT_SUFFIX');
 		}
 		else if ($n >= 1000000000000)
 		{
 			// 1t+
 			$n_format = floor($n / 1000000000000);
-			$suffix = 'T';
+			$suffix = $this->language->lang('TRILLION_SHORT_SUFFIX');
 		}
 		$temp = $n_format . $suffix;
 		return !empty($temp) ? $n_format . $suffix : 0;
