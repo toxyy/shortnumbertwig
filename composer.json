@@ -25,7 +25,7 @@
 			"host": "toxyy.github.io",
 			"directory": "/version",
 			"filename": "shortnumbertwig.json",
-                        "ssl": 1
+			"ssl": 1
 		}
 	}
 }
