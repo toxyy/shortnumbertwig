@@ -1,8 +1,5 @@
 services:
     toxyy.shortnumbertwig.short_number_twig:
         class: toxyy\shortnumbertwig\template\twig\extension\short_number_twig
-        arguments:
-            - '@config'
-            - '@language'
         tags:
             - { name: twig.extension }
