@@ -4,6 +4,7 @@
 
 phpBB 3.3.x PHP 7+
 
+[![Build Status](https://travis-ci.org/toxyy/shortnumbertwig.svg?branch=master)](https://travis-ci.org/toxyy/shortnumbertwig)
 ## Features
 
 Adds `short_number_ext` twig function
