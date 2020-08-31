@@ -1,5 +1,7 @@
 # PhpBB Extension - toxyy Short Number Twig Extension v1.0.0
 
+[Topic on phpBB.com](https://www.phpbb.com/community/viewtopic.php?t=2566181)
+
 ## Requirements
 
 phpBB 3.3.x PHP 7+
